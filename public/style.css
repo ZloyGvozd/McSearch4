@@ -1,0 +1,82 @@
+.body{
+    background-color: #242424;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+}
+.main{
+    background-color: #1c1c1c;
+    height: 95vh;
+    width: min-content;
+    display: flex;
+    flex-direction: row;
+}
+.iblo{
+    width: 208px;
+    height: auto;
+    margin-top: 10px;
+}
+.hui{
+    color: snow;
+}
+.inp{
+    width: 200px;
+}
+.check{
+    display: flex;
+    align-items: normal;
+    gap: 5px;
+    margin-top: 10px;
+}
+.scroll-container {
+    width: 300px;
+    height: 600px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #242424;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    color: snow;
+}
+.list-item.active {
+    border-bottom-color: #10ea10;
+}
+
+.list-item button {
+    padding: 5px 10px;
+}
+.link{
+    text-decoration: underline;
+}
+.link:hover{
+    cursor: pointer;
+}
+#copyNotification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+#copyNotification.show {
+    opacity: 1;
+    pointer-events: auto;
+}

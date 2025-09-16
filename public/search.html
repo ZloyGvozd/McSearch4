@@ -1,0 +1,56 @@
+<!doctype html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>McSearch4</title>
+    <link rel="icon" type="image/x-icon" href="icon2.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+
+<body class="body">
+    <div class="main">
+        <div style="margin-left: 10px; width: 220px">
+            <img src="icon.png" class="iblo">
+            <h3 class="hui">основные настройки</h3>
+            <input type="text" placeholder="ip диапазон" value="185.107.192.0-185.107.194.255" class="inp" id="inp1" disabled="disabled"><br>
+            <input type="text" placeholder="диапазон портов" value="10000-50000" class="inp" id="inp2" disabled="disabled"><br>
+            <input type="text" placeholder="потоков" value="15" class="inp" id="inp3" disabled="disabled"><br>
+            <div class="check">
+                <input type="checkbox" id="custom">
+                <t class="hui">свои значения</t>
+            </div>
+
+            <h3 class="hui">настройки прокси</h3>
+            <input type="text" placeholder="ip" value="127.0.0.1" class="inp" id="inp4" disabled="disabled"><br>
+            <input type="text" placeholder="порт" value="9150" class="inp" id="inp5" disabled="disabled"><br>
+            <p style="color: #404040">ни работает</p>
+            <h4 class="hui">настройки авторестарта прокси</h4>
+            <div class="check">
+               <input type="checkbox" id="reload">
+               <t class="hui">авторестарт</t>
+            </div>
+            <input type="text" placeholder="повторений до рестарта" value="1000" class="inp" id="inp6" style="margin-top: 15px"><br>
+            <button style="margin-top: 5px" id="reload_manual">перезагрузить</button>
+        </div>
+        <div class="scroll-container" id="finded">
+
+        </div>
+        <div style="width: 220px; margin-top: 10px">
+            <button style="width: 210px; height: 40px; font-size: 20px;" id="start/stop">старт</button>
+            <h4 style="color: #e12525" id="error">сервер не отвечает:0</h4>
+            <h4 style="color: #d6c421" id="all">всего запросов:0</h4>
+            <h4 style="color: #2dd621" id="find">серверов найдено:0</h4>
+            <h4 style="color: #218bd6" id="log">не запущено</h4>
+        </div>
+    </div>
+
+    <div id="copyNotification">ip скопирован</div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

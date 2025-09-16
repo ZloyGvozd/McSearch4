@@ -1,0 +1,21 @@
+{
+  "name": "mcsearch4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "mcsearch": "node --max-old-space-size=8192 index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "global-agent": "^3.0.0",
+    "minecraft-protocol": "^1.57.0",
+    "minecraft-server-util": "^3.7.2",
+    "socket.io": "^4.8.1",
+    "socks": "^2.8.5",
+    "socks-proxy-agent": "^8.0.5"
+  }
+}
